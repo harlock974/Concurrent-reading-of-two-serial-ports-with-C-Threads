@@ -1,6 +1,6 @@
 # C Threads simple example : concurrent reading of two serial ports
 
-Thread programming could also be useful in small and simple programs.
+Thread programming can be useful in small and simple programs.
 In my application I needed to record information coming from two devices, a GPS and a depth sensor.
 Reading sequentially two serial ports in a single thread could be tricky. With a blocking behavior, you will miss some sentences form one port while waiting for the other. With a non blocking configuration, you will get some incomplete sentences. The faster the communication, the worst it will be.
 
